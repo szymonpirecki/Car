@@ -15,12 +15,14 @@ public class Car {
         this.dimensions = dimensions;
     }
 
-    public static void printEveryBawaraWithAutomaticGear(ArrayList<Car> allCars){
+    public static void searchCars(ArrayList<Car> allCars) {
         for (Car car : allCars) {
-            if (car.getProducent().getModel().equals("BMW")){
-                if (car.isAutomaticGear){
-                    if (car.getDimensions().get(0).getTrunkCapacity() > 300){
-                        System.out.println(car);
+            if (car.getProducent().getModel().equals("BMW") && car.isAutomaticGear) {
+                for (Dimension dimension : car.getDimensions()) {
+                    if (dimension.getTrunkCapacity() > 300) {
+                        for (Country country : car.getMarket().getCountries()) {
+                            System.out.println(country.getCountryName() + " - " + country.getCountrySign());
+                        }
                     }
                 }
             }

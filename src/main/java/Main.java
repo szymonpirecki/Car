@@ -4,11 +4,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Country poland = new Country("Poland",'P');
-        Country germany = new Country("Germany",'G');
-        Country sweden = new Country("Sweden",'S');
-        Country japan = new Country("Japan",'J');
-        Country france = new Country("France",'F');
+        Country poland = new Country("Poland", 'P');
+        Country germany = new Country("Germany", 'G');
+        Country sweden = new Country("Sweden", 'S');
+        Country japan = new Country("Japan", 'J');
+        Country france = new Country("France", 'F');
 
         List<Country> europe = List.of(poland, germany, sweden, france);
         List<Country> asia = List.of(japan);
@@ -46,24 +46,24 @@ public class Main {
         String standardSegment = "standard";
         String mediumSegment = "medium";
 
-        Car car1 = new Car(bmw1,true, businessMarket, "premium", new ArrayList<>(List.of(smallCarWithNoTrunk)));
-        Car car2 = new Car(bmw3,false, cargoMarket, "standard", new ArrayList<>(List.of(smallCarWithSmallTrunk)));
-        Car car3 = new Car(audiA3,true, transportMarket, "medium", new ArrayList<>(List.of(smallCarWithMediumTrunk)));
-        Car car4 = new Car(audiA4,false, businessMarket, "premium", new ArrayList<>(List.of(smallCarWithLargeTrunk)));
-        Car car5 = new Car(audiA6,true, cargoMarket, "standard", new ArrayList<>(List.of(mediumCarWithSmallTrunk)));
-        Car car6 = new Car(vwPassat,false, transportMarket, "medium", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
-        Car car7 = new Car(vwGolf,true, businessMarket, "premium", new ArrayList<>(List.of(mediumCarWithLargeTrunk)));
-        Car car8 = new Car(bmw5,true, cargoMarket, "standard", new ArrayList<>(List.of(mediumCarWithLargeTrunk)));
-        Car car9 = new Car(bmw1,true, transportMarket, "medium", new ArrayList<>(List.of(bigCarWithLargeTrunk)));
-        Car car10 = new Car(bmw1,true, businessMarket, "premium", new ArrayList<>(List.of(bigCarWithMediumTrunk)));
-        Car car11 = new Car(volvoS40,true, cargoMarket, "standard", new ArrayList<>(List.of(bigCarWithSmallTrunk)));
-        Car car12 = new Car(bmw5,false, busMarket, "medium", new ArrayList<>(List.of(bigCarWithSmallTrunk)));
-        Car car13 = new Car(audiA3,true, businessMarket, "premium", new ArrayList<>(List.of(bigCarWithMediumTrunk)));
-        Car car14 = new Car(vwGolf,false, taxiMarket, "standard", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
-        Car car15 = new Car(vwPolo,true, taxiMarket, "medium", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
+        Car car1 = new Car(bmw1, true, businessMarket, "premium", new ArrayList<>(List.of(smallCarWithNoTrunk)));
+        Car car2 = new Car(bmw3, false, cargoMarket, "standard", new ArrayList<>(List.of(smallCarWithSmallTrunk)));
+        Car car3 = new Car(audiA3, true, transportMarket, "medium", new ArrayList<>(List.of(smallCarWithMediumTrunk)));
+        Car car4 = new Car(audiA4, false, businessMarket, "premium", new ArrayList<>(List.of(smallCarWithLargeTrunk)));
+        Car car5 = new Car(audiA6, true, cargoMarket, "standard", new ArrayList<>(List.of(mediumCarWithSmallTrunk)));
+        Car car6 = new Car(vwPassat, false, transportMarket, "medium", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
+        Car car7 = new Car(vwGolf, true, businessMarket, "premium", new ArrayList<>(List.of(mediumCarWithLargeTrunk)));
+        Car car8 = new Car(bmw5, true, cargoMarket, "standard", new ArrayList<>(List.of(mediumCarWithLargeTrunk)));
+        Car car9 = new Car(bmw1, true, transportMarket, "medium", new ArrayList<>(List.of(bigCarWithLargeTrunk)));
+        Car car10 = new Car(bmw1, true, businessMarket, "premium", new ArrayList<>(List.of(bigCarWithMediumTrunk)));
+        Car car11 = new Car(volvoS40, true, cargoMarket, "standard", new ArrayList<>(List.of(bigCarWithSmallTrunk)));
+        Car car12 = new Car(bmw5, false, busMarket, "medium", new ArrayList<>(List.of(bigCarWithSmallTrunk)));
+        Car car13 = new Car(audiA3, true, businessMarket, "premium", new ArrayList<>(List.of(bigCarWithMediumTrunk)));
+        Car car14 = new Car(vwGolf, false, taxiMarket, "standard", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
+        Car car15 = new Car(vwPolo, true, taxiMarket, "medium", new ArrayList<>(List.of(mediumCarWithMediumTrunk)));
 
         ArrayList<Car> allCars = new ArrayList<>(List.of(car1, car2, car3, car4, car5, car6, car7, car8, car9, car10, car11, car12, car13, car14, car15));
 
-        Car.printEveryBawaraWithAutomaticGear(allCars);
+        Car.searchCars(allCars);
     }
 }

@@ -23,4 +23,12 @@ public class Country {
     public void setCountrySign(char countrySign) {
         this.countrySign = countrySign;
     }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "countryName='" + countryName + '\'' +
+                ", countrySign=" + countrySign +
+                '}';
+    }
 }
